@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>dokuzor banking</title>
+</head>
+
+<body>
+    <aside class="container-fluid" style="background-color: #323232;" id="aside-md">
+        <span><i class="fas fa-map-marker-alt"></i> Türkiye,İstanbul,Kadkıköy</span>
+        <span><i class="fab fa-telegram-plane"></i> dogukandurukan0506@gmail.com</span>
+        <span><i class="fas fa-phone-alt"></i> 1-800-123-1234</span>
+    </aside>
+
+    <!--***ASİDE-MD***-->
+
+    <button id="asideac" style="border: 0; background-color: #323232; color: #fff; border: 1px solid #5e5e5e;" class="container-fluid p-3"><i class="fas fa-arrow-down"></i></button>
+    <aside class="container-fluid p-0" id="aside-xsml">
+        <div id="asidexsmlwrapper">
+        <div style="border: 0px solid;"><i class="fas fa-map-marker-alt"></i> Türkiye,İstanbul,Kadkıköy</div>
+        <div style="border: 0px solid;"><i class="fab fa-telegram-plane"></i> dogukandurukan0506@gmail.com</div>
+        <div style="border: 0px solid;"><i class="fas fa-phone-alt"></i> 1-800-123-1234</div>
+        </div>
+    </aside>
+    <button id="asidekapa" style="border: 0; background-color: #323232; color: #fff; border: 1px solid #5e5e5e;" class="container-fluid p-3"><i class="fas fa-arrow-up"></i></button>
+
+
+    <!--***ASİDE-XSML***-->
+
+<div class="container-fluid position-sticky sticky-top" style="	background-color: #e3e3e3; border: 0px solid;" id="nav-md-wrapper">
+    <span style= "text-transform: uppercase; text-shadow: 2px 0px 5px #323232 ; color: #323232; position: absolute; top: 50%; transform: translateY(-50%); left: 20%;"><h5>Dokuzor Bankası</h5></span>
+    <nav id="nav-md" >
+        <ul>
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Sistemimiz</a></li>
+                    <li><a href="#">Özellikler</a></li>
+                    <li><a href="#">Promosyon</a></li>
+                    <li><a href="#">Posta türleri</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+<!--***NAV-MD***-->
+
+
+<button id="navac" style="border: 0; background-color: #323232; color: #fff; border: 1px solid #5e5e5e;" class="container-fluid p-3"><i class="fas fa-arrow-down"></i></button>
+    
+    <nav id="nav-xsml" class="container-fluid text-center" style="background-color: #323232;">
+        <ul id="nav-xsml-ul">
+                    <li><a href="#">Anasayfa</a></li>
+                    <li><a href="#">Sistemimiz</a></li>
+                    <li><a href="#">Özellikler</a></li>
+                    <li><a href="#">Promosyon</a></li>
+                    <li><a href="#">Posta türleri</a></li>
+        </ul>
+    </nav>
+
+<button id="navkapa" style="border: 0; background-color: #323232; color: #fff; border: 1px solid #5e5e5e;" class="container-fluid p-3"><i class="fas fa-arrow-up"></i></button>
+
+<!--***NAV-XSML***-->
+
+
+
+    <header class="container-fluid p-3">
+
+        <div class="container">
+
+            <section class="row">
+
+                <article class="col-md-6 text-center text-light">
+        <h1 style="	font-family: 'Rubik', sans-serif; margin-top: 30%; font-weight: 600;">Para kazanmak artık harcamak kadar kolay!</h1>
+        <p style="font-size: 24px; margin-top: 10px; color: #cddc39; font-weight: 600;">Türkiyede en iyi dünyanın 2. en iyi bankası</p>
+    </article>
+
+
+    <article class="col-md-6 p-5 border text-center" id="headerarticle2" style="border-radius: 5px; box-shadow: 0px 10px 10px #323232;">
+        <h2 class="mt-4" style="font-family: 'Rubik', sans-serif; font-weight: 600;">Ne kadar ihtiyacınız var?</h2>
+        <p class=" mt-2" style="font-weight: 600; ">5000 $'e kadar kazanç sağlayabilirsiniz</p>
+        <img src="images/payments-1.png" class="img-fluid mt-3">
+
+       <div class="container-fluid mt-3 text-left" style="font-weight: 600; color: #545252;">Toplam para: ($)</div>
+        <div class="input-group mt-3">
+            <input type="text" id="miktar" class="form-control">
+        </div>
+
+        <div class="container-fluid  mt-3 text-left" style="font-weight: 600; color: #545252;">Süresi (AY):</div>
+        <div class="input-group mt-3">
+            <input type="text" id="sure" class="form-control">
+        </div>
+
+        <div class="container-fluid  mt-3 text-left" style="font-weight: 600; color: #545252;">Geri ödeme tutarı:</div>
+        <div class="input-group mt-3">
+            <input type="text" id="tutar" class="form-control" disabled>
+        </div>
+
+        <div class="input-group"><button class="btn btn-primary" style="margin-top: 10px;" onclick="hesapla()">Şimdi alın</button></div>
+    </article>
+
+    </section>
+
+    </div>
+
+    </header>
+
+    <!--***HEADER***-->
+
+    <!--<i class="far fa-credit-card" style="color: #0a5e17 ; font-size: 48px;"></i>-->
+
+    <div class="container p-4" style="margin-top: 5%;">
+        <section class="row justify-content-center p-2">
+
+            <article class="col-md-3 text-center ml-md-3 mt-4"><span><i class="fas fa-piggy-bank" style="font-size: 48px; color: palevioletred;"></i></span>
+                <h3 style="color: #3e467b; font-family: 'Rubik', sans-serif;" class="mt-2">Siz nerde paranız orda !</h3>
+                <p class="mt-2">Paranız siz nerde olursanız olun anında dokuzor online banka uygulaması sayesinde anında para cebinizide !</p>
+                <h5 style="margin-top: 15px; color: #3e467b; font-family: 'Rubik', sans-serif; font-weight: 600; font-size: 20px; cursor: pointer;">NASIL ÇALIŞIR?</h5>
+                </article>
+           
+                <article class="col-md-3 text-center ml-md-3 mt-4"><span><i class="far fa-credit-card mt-md-2" style="color: #0a5e17 ; font-size: 48px;"></i></span>
+                <h3 style="color: #3e467b; font-family: 'Rubik', sans-serif;" class="mt-2 mt-md-2">Anında kartınızda !</h3>
+                <p class="mt-2 mt-md-4">Paranız sizden hiçbir kesinti yapılmadan veya ek bir komisyon uygulanmadan kartınızı yatırılınır. !</p>
+                <h5 style="margin-top: 40px; color: #3e467b; font-family: 'Rubik', sans-serif; font-weight: 600; font-size: 20px; cursor: pointer;">KARTINIZ YOKMU?</h5>
+
+                </article>
+
+                <article class="col-md-3 text-center ml-md-3 mt-4"><span><i class="fas fa-shield-alt mt-md-2" style="font-size: 48px; color: #2a9fc9"></i></span>
+                <h3 style="color: #3e467b; font-family: 'Rubik', sans-serif;" class="mt-2">Hızlı ve güvenli !</h3>
+                <p class="mt-2 mt-md-3">Paranız sizlere özel dokuzor süzgeç sisteminden geçirilip saniyeler içinde paranızı kartınızda bulabilirsiniz !</p>
+                <h5 style="margin-top: 30px; color: #3e467b; font-family: 'Rubik', sans-serif; font-weight: 600; font-size: 20px; cursor: pointer;">POLİTİKAMIZI OKUYUN</h5>
+            </article>
+        </section>
+    </div>
+
+    <div class="container-fluid" id="morarkaplan" style="margin-top: 5%;">
+        <section class="row p-3">
+
+            <article class="col-md-12 text-center mt-4"><h3 style="font-family: 'Rubik', sans-serif; font-weight: 600;">Şimdi para kazanının!</h3>
+            <p style="color: #cddc39 ; margin-top: 10px; text-transform: uppercase; font-weight: 600; font-size: 18px;">Adımları takip ederek 15 dk içinde para kazanabilirsiniz!</p>
+            </article>
+
+            <article class="col-md-6 d-flex justify-content-center mt-md-5 mt-3"><img src="images/lamp.png" class="img-fluid"></article>
+
+            <article class="col-md-6 mt-md-5 mt-3 text-light"><h3 style="font-family: 'Rubik', sans-serif; font-weight: 600;" class="mt-4">Sitemizde bulunan formu doldurunuz!</h3>
+            <p style="font-weight: 600; margin-top: 30px;">Sitemizden hızlı para elde etmek için talepte bulunun biz sizlere iş saatleri içinde 15 ile 30 dakika arasında geri dönüş sağlayayalım.</p>
+            <button class="btn" style="background-color: #cddc39; padding: 10px; margin-top: 20px; font-weight: 600; text-transform: uppercase;">forma gidin</button>
+            </article>
+        </section>
+    </div>
+
+
+    <div class="container" style="margin-top: 5%;">
+        <section class="row">
+
+            <article class="col-md-6">
+                <h3 style="font-family: 'Rubik', sans-serif; font-weight: 600; margin-top: 15%;">Yöneticimiz sizlere detaylı olarak konuşmak için ulaçacak</h3>
+                <p style="margin-top: 30px;">Sitemizden hızlı para elde etmek için talepte bulunun biz sizlere iş saatleri içinde 15 ile 30 dakika arasında geri dönüş sağlayayalım.</p>
+                <button class="btn" style="background-color: #cddc39; padding: 10px; margin-top: 20px; font-weight: 600; text-transform: uppercase;">Detaylar nedir?</button>
+            </article>
+
+            <article class="col-md-6 d-flex justify-content-center mt-5"><img src="images/wallet.png" class="img-fluid"></article>
+        </section>
+    </div>
+
+
+    <div class="container-fluid" style="margin-top: 5%;" id="sariarkaplan">
+        <section class="row">
+            <article class="col-md-6 d-flex justify-content-center mt-md-5 order-md-0 order-2 mt-5">
+                <img src="images/money.png">
+            </article>
+
+            <article class="col-md-6 mt-md-5">
+                <h3 style="font-family: 'Rubik', sans-serif; font-weight: 600; margin-top: 15%;">Paranızı en güvenli yollardan 15 dakika içerisinde teslim alınız</h3>
+                <p style="margin-top: 30px; font-weight: 600;">Sitemizden hızlı para elde etmek için talepte bulunun biz sizlere iş saatleri içinde 15 ile 30 dakika arasında geri dönüş sağlayayalım.</p>
+                <button class="btn" style="background-color: #3e467b; padding: 10px; margin-top: 20px; font-weight: 600; text-transform: uppercase; color: #fff;">Detaylar nedir?</button>
+            </article>
+        </section>
+    </div>
+
+
+<footer class="container-fluid">
+    <section class="row justify-content-center">
+
+        <article class="col-md-4 d-flex justify-content-center">
+            <ul style="margin-top: 15px;">
+            <li><a href="#">Pazartesi 11:00 - 19:00</a></li>
+            <li><a href="#">Salı-Çarşamba 11:00 20:00</a></li>
+            <li><a href="#">Perşembe-Cuma 10:00 - 18:00</a></li>
+            <li><a href="#">Cumartesi-Pazar 11:00 - 18:00</a></li>
+        </ul>
+        </article>
+
+        
+        <article class="col-md-4 d-flex justify-content-center">
+            <ul style="margin-top: 15px;">
+                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#">Servislerimiz</a></li>
+                <li><a href="#">Şirket Haberleri</a></li>
+                <li><a href="#">Müşteri temsilcisi</a></li>
+            </ul>
+            </article>
+    
+        <article class="col-md-4 d-flex justify-content-center">
+        <ul style="margin-top: 15px;">
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        </article>
+    </section>
+
+</footer>
+
+<div class="container-fluid d-flex justify-content-center" style="padding: 25px; background-color: #0f1112; color: #545759;">
+    <p style="font-weight: 600;">Privacy & Policy / dokuzor - 2021 / All rights reserved </p>
+</div>
+
+
+</body>
+
+<script src="index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</html>
